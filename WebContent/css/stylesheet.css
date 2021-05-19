@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start; 
+}
+header {
+    height: 64px;
+    width: 100%;
+    background-color: #475285;
+    display: flex;
+    flex-flow: row nowrap;
+}
+#title {
+    width: 250px;
+    height: 100%;
+    font-weight: 500;
+    line-height: 64px;
+    color:#fff;
+    text-align: center;
+    margin-right: calc(100% - 530px);;
+}
+.user {
+    display: flex;align-items: center;justify-content: center;margin-left: 20px; cursor: pointer;
+}
+aside, #container {
+    height: calc(100% - 64px);
+}
+aside {
+    width: 250px;
+    /* height: calc(100% - 64px); */
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.top {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.search {
+    height: 30px;
+    line-height: 60px;
+    margin: 15px 0;
+    margin-left: 10px;
+    display: flex;
+    flex-flow: 
+    row nowrap;
+}
+.search-icon {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f8fa;
+    border: none;
+}
+.search input {
+    border: none;
+    width: auto;
+    text-indent: 10px;
+    padding: 0;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #f6f8fa;
+}
+ul {
+    width: 100%;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none;
+	color: black;
+}
+a:visited {
+	text-decoration: none;
+}
+li {
+    width: calc(100% - 20px);
+    height: 40px;
+    margin: 0 10px;
+    line-height: 40px;
+    list-style: none;
+    text-indent: 35px;
+    cursor: pointer;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+li:hover {
+    background-color: #f6f8fa;
+}
+.li-active {
+    background-color: #e4f2ff;
+    color: #3d9dfe;
+}
+.chart-large, .chart-small , .chart-middle{
+    margin: 10px;
+    background-color: #ffffff;
+     overflow: auto;
+}
+.chart-small {
+    width: calc((100% - 80px)/4);
+    height: 180px;
+    text-align: left;
+    
+}
+.chart-small .container {
+	width: calc(100% - 40px);
+	height: calc(100% - 30px);
+	padding: 15px;
+}
+.chart-small #date {
+	font-size: 12px;
+	font-weight: 400;
+	color: rgb(103, 114, 157);
+}
+.chart-small #title1 {
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(32, 45, 63);
+}
+.chart-small #data1, .chart-small #data2, .chart-small #data3, .chart-small #data4 {
+	font-size: 36px;
+	font-weight: 500;
+	color: rgb(32, 45, 63);
+}
+.chart-small .compare {
+	font-size: 12px;
+	font-weight: 400;
+	color: rgb(32, 45, 63);
+}
+.chart-small .data {
+	margin-right: 30px;
+	color: rgb(0, 191, 116);
+}
+.chart-small .red {
+	color: rgb(255, 93, 93);
+}
+.chart-large {
+    width: 100%;
+    height: 580px;   
+}
+.chart-middle {
+    width: calc((100% - 40px)/2);
+    height: 380px;
+}
+#container {
+    width: calc(100% - 250px);
+    background-color: #f0f2f5;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+    /* padding: 10px; */
+}
+table {
+    /*设置相邻单元格的边框间的距离*/
+    border-spacing: 0;
+    /*表格设置合并边框模型*/
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    height: 380px;
+}
+/*关键设置 tbody出现滚动条*/
+table tbody {
+	width:100%;
+    display: block;
+    height: 80px;
+    overflow-y: scroll;
+    height: 380px;
+}
